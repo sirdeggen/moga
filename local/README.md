@@ -39,11 +39,13 @@ Listens on `http://127.0.0.1:18080/api/v1`.
 
 ## Optional public URL
 
+This ngrok account is pay-as-you-go and requires a reserved domain:
+
 ```sh
-ngrok http 18080
+ngrok http 18080 --url your-reserved-domain.ngrok-free.app
 ```
 
-Point a LookupResolver host list at the ngrok HTTPS origin. SHIP/SLAP advertisement is not required for the first smoke: call `/lookup` directly.
+Point a LookupResolver host list at that HTTPS origin. SHIP/SLAP advertisement is not required for the first smoke: call `/lookup` directly.
 
 ## What this does not prove
 
